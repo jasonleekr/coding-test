@@ -1,0 +1,60 @@
+.square-container {
+    position: relative;
+    width: 20%; /* 예: 카드 너비의 50%로 설정 */
+    padding-top: 20%; /* 너비와 동일한 비율로 설정 (1:1 Aspect Ratio) */
+    margin: 0 auto; /* 가운데 정렬을 위한 설정 */
+}
+
+.square-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+.footer-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* 너비를 90%로 설정하여 양쪽에 5%씩 여백을 남깁니다. */
+    border-bottom: 1px solid #444444;
+    margin: 20px auto; /* 위 아래로 여백을 줌 */
+}
+.second-line a{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width:48rem){
+    .first-line{
+        text-align: center;
+    }
+}
+@media screen and (max-width:48rem) {
+    .second-line{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+}
+.hover-enlarge {
+    transition: transform 0.3s ease-in-out; /* 애니메이션 효과 */
+}
+
+.hover-enlarge:hover {
+    transform: scale(1.05); /* 이미지 크기 확대 */
+}
+
+.img-link {
+    display: block;
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+
